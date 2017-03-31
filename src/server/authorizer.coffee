@@ -61,6 +61,7 @@ class Authorizer
 				{"x-amz-credential": meta_credential}
 				{"x-amz-date": meta_date}
 				{"x-amz-meta-uuid": meta_uuid}
+				{"Cache-Control": "max-age=604800"}
 			]
 
 		# Encode the policy
