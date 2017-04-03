@@ -72,7 +72,7 @@ export default (file, {_id = uuid(), encoding = "", file_name = true, authorizer
 			form_data.append "X-Amz-Credential", signature.meta_credential
 			form_data.append "X-Amz-Signature",signature.signature
 
-			form_data.append("Cache-Control", "max-age=604800");
+			form_data.append("Cache-Control", "max-age=604800")
 
 			form_data.append "Policy",signature.policy
 
